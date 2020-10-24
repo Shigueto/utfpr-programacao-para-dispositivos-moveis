@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Múltiplas Telas</string>
+    <string name="texto_sobre">Aplicação desenvolvida para fins didáticos na UTFPR</string>
+    <string name="nome">Nome</string>
+    <string name="telefone">Número de telefone</string>
+    <string name="email">E-mail</string>
+    <string name="site">Site</string>
+    <string name="continuar">Continuar</string>
+    <string name="sobre">Sobre</string>
+    <string name="dados_informados">Dados Informados</string>
+    <string name="nome_obrigatorio">Informe o nome</string>
+    <string name="telefone_obrigatorio">Informe o número de telefone</string>
+    <string name="email_obrigatorio">Informe o e-mail</string>
+    <string name="site_obrigatorio">Informe o site</string>
+    <string name="pais">País</string>
+    <string name="enviar_email">Enviar e-mail</string>
+    <string name="ligar">Ligar</string>
+    <string name="acessar">Acessar</string>
+</resources>
