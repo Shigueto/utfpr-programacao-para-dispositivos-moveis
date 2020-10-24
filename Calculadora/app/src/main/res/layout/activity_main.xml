@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valor 1:" />
+        android:text="@string/valor_1" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,7 +17,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valor 2:" />
+        android:text="@string/valor_2" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,22 +26,22 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Resultado:" />
+        android:text="@string/resultado" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0.0"
+        android:text="@string/zeros"
         android:id="@+id/txtResultado" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Somar"
+        android:text="@string/somar"
         android:id="@+id/btnSomar"
         android:onClick="onSomarClick" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Limpar"
+        android:text="@string/limpar"
         android:onClick="onLimparClick" />
 </LinearLayout>

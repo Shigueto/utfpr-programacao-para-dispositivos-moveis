@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Calculadora</string>
+    <string name="valor_1">Valor 1:</string>
+    <string name="valor_2">Valor 2:</string>
+    <string name="resultado">Resultado:</string>
+    <string name="zeros">0,0</string>
+    <string name="somar">Somar</string>
+    <string name="limpar">Limpar</string>
+    <string name="sobre_somar">Esse botão serve para somar dois valores</string>
+    <string name="valores_invalidos">Informe valores válidos</string>
 </resources>

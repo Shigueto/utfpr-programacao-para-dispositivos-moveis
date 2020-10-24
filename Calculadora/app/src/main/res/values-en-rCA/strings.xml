@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="valor_1">First Value:</string>
+    <string name="valor_2">Second Value:</string>
+    <string name="resultado">Result:</string>
+    <string name="zeros">0.0</string>
+    <string name="somar">Sum</string>
+    <string name="limpar">Clean</string>
+    <string name="sobre_somar">This button is used to sum two values</string>
+    <string name="valores_invalidos">Enter valid numbers</string>
+</resources>
