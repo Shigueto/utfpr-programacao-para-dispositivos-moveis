@@ -15,6 +15,8 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText edtCodigo;
     private EditText edtDescricao;
+    private EditText edtPrazo;
     private ListView listaTarefas;
     private ArrayAdapter<Tarefa> adapter;
     private TarefaDAO dao;
@@ -34,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         edtCodigo = findViewById(R.id.edtCodigo);
         edtDescricao = findViewById(R.id.edtDescricao);
+        edtPrazo = findViewById(R.id.edtPrazo);
         listaTarefas = findViewById(R.id.listaTarefas);
 
         dao = new TarefaDAO(this);
@@ -73,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
         Tarefa tarefa = dao.carregar(id);
         edtCodigo.setText(String.valueOf(tarefa.getId()));
         edtDescricao.setText(tarefa.getDescricao());
+        edtPrazo.setText(tarefa.getPrazoFormatado());
     }
 
     private void atualizarLista() {
@@ -86,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
         edtCodigo.setText("");
         edtDescricao.setText("");
         edtDescricao.requestFocus();
+        edtPrazo.setText("");
     }
 
     public void onSalvarClick(View v) {
@@ -97,6 +103,13 @@ public class MainActivity extends AppCompatActivity {
         } else {
             Tarefa tarefa = new Tarefa();
             tarefa.setDescricao(descricao);
+            try {
+                Date prazo = new SimpleDateFormat(Tarefa.FORMATO_VISUALIZACAO)
+                        .parse(edtPrazo.getText().toString());
+                tarefa.setPrazo(prazo);
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
             String codigo = edtCodigo.getText().toString();
             if (!codigo.isEmpty()) {
                 tarefa.setId(Long.parseLong(codigo));

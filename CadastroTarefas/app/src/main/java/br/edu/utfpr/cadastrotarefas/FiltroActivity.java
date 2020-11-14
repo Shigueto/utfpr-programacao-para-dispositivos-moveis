@@ -37,8 +37,10 @@ public class FiltroActivity extends AppCompatActivity {
         int id;
         if (CadastroTarefaHelper.CAMPO_ID.equals(ordenacao)) {
             id = R.id.rbCodigo;
-        } else {
+        } else if (CadastroTarefaHelper.CAMPO_DESCRICAO.equals(ordenacao)) {
             id = R.id.rbDescricao;
+        } else {
+            id = R.id.rbPrazo;
         }
         rgOrdenacao.check(id);
 
@@ -48,8 +50,10 @@ public class FiltroActivity extends AppCompatActivity {
                 String ordenacao;
                 if (checkedId == R.id.rbCodigo) {
                     ordenacao = CadastroTarefaHelper.CAMPO_ID;
-                } else {
+                } else if (checkedId == R.id.rbDescricao) {
                     ordenacao = CadastroTarefaHelper.CAMPO_DESCRICAO;
+                } else {
+                    ordenacao = CadastroTarefaHelper.CAMPO_PRAZO;
                 }
                 SharedPreferences.Editor editor = prefs.edit();
                 editor.putString(PREF_ORDENACAO, ordenacao);

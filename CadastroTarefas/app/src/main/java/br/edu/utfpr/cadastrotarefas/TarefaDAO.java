@@ -28,6 +28,7 @@ public class TarefaDAO {
     public boolean salvar(Tarefa tarefa) {
         ContentValues values = new ContentValues();
         values.put(CadastroTarefaHelper.CAMPO_DESCRICAO, tarefa.getDescricao());
+        values.put(CadastroTarefaHelper.CAMPO_PRAZO, tarefa.getPrazo());
 
         if (tarefa.getId() == null) {
             return database.insert(CadastroTarefaHelper.NOME_TABELA, null, values) >= 0;
@@ -51,6 +52,7 @@ public class TarefaDAO {
             tarefa = new Tarefa();
             tarefa.setId(cursor.getLong(0));
             tarefa.setDescricao(cursor.getString(1));
+            tarefa.setPrazo(cursor.getString(2));
         }
         cursor.close();
         return tarefa;
@@ -78,6 +80,7 @@ public class TarefaDAO {
             Tarefa tarefa = new Tarefa();
             tarefa.setId(cursor.getLong(0));
             tarefa.setDescricao(cursor.getString(1));
+            tarefa.setPrazo(cursor.getString(2));
             tarefas.add(tarefa);
         }
 

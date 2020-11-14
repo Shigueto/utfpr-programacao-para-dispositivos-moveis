@@ -15,4 +15,5 @@
     <string name="filtro">Filtro</string>
     <string name="salvar_tarefa_erro">Não foi possível salvar a tarefa</string>
     <string name="excluir_tarefa_erro">Não foi possível excluir a tarefa</string>
+    <string name="prazo">Prazo</string>
 </resources>
