@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Conectividade</string>
+    <string name="uf">UF</string>
+    <string name="localidade">Localidade</string>
+    <string name="logradouro">Logradouro</string>
+    <string name="buscar">Buscar</string>
+    <string name="uf_obrigatoria">Informe a UF</string>
+    <string name="localidade_obrigatoria">Informe a localidade</string>
+    <string name="logradouro_obrigatorio">Informe o logradouro</string>
+    <string name="buscar_ceps_erro">Não foi possível obter a lista de CEPs. Verifique se os dados digitados estão corretos, se você está conectado à internet e tente novamente.</string>
+    <string name="iniciar_download_imagem">Iniciar download de imagem</string>
+    <string name="abrir_pagina_download">Abrir página de download</string>
+</resources>
