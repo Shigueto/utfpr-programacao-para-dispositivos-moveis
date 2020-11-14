@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Gps Mapa</string>
+    <string name="obter_ultima_localizacao_conhecida">Obter última localização conhecida</string>
+    <string name="latitude">Latitude: %s</string>
+    <string name="longitude">Longitude: %s</string>
+    <string name="get_last_location_request_permisson_denied">Para obter a última localização conhecida, é necessária a permissão de localização</string>
+    <string name="visualizar_no_mapa">Visualizar no Mapa</string>
+</resources>
