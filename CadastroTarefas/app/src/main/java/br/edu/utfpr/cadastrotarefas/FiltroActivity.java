@@ -31,11 +31,11 @@ public class FiltroActivity extends AppCompatActivity {
         prefs = getSharedPreferences(NOME_ARQUIVO_PREFS, Context.MODE_PRIVATE);
 
         // Campo para ordenação
-        String ordenacao = prefs.getString(PREF_ORDENACAO, MainActivity.CAMPO_ID);
+        String ordenacao = prefs.getString(PREF_ORDENACAO, CadastroTarefaHelper.CAMPO_ID);
 
         RadioGroup rgOrdenacao = findViewById(R.id.rgOrdenacao);
         int id;
-        if (MainActivity.CAMPO_ID.equals(ordenacao)) {
+        if (CadastroTarefaHelper.CAMPO_ID.equals(ordenacao)) {
             id = R.id.rbCodigo;
         } else {
             id = R.id.rbDescricao;
@@ -47,9 +47,9 @@ public class FiltroActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 String ordenacao;
                 if (checkedId == R.id.rbCodigo) {
-                    ordenacao = MainActivity.CAMPO_ID;
+                    ordenacao = CadastroTarefaHelper.CAMPO_ID;
                 } else {
-                    ordenacao = MainActivity.CAMPO_DESCRICAO;
+                    ordenacao = CadastroTarefaHelper.CAMPO_DESCRICAO;
                 }
                 SharedPreferences.Editor editor = prefs.edit();
                 editor.putString(PREF_ORDENACAO, ordenacao);

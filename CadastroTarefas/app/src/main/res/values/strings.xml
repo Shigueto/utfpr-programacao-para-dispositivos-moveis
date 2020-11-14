@@ -13,4 +13,6 @@
     <string name="usar_ordem_decrescente">Usar ordem decrescente</string>
     <string name="texto_filtro">Descrição começa com</string>
     <string name="filtro">Filtro</string>
+    <string name="salvar_tarefa_erro">Não foi possível salvar a tarefa</string>
+    <string name="excluir_tarefa_erro">Não foi possível excluir a tarefa</string>
 </resources>
