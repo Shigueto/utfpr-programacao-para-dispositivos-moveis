@@ -227,4 +227,10 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
+    public void onVisualizarNoMapaInternoClick(View v) {
+        startActivity(new Intent(this, MapsActivity.class)
+                .putExtra("latitude", latitude)
+                .putExtra("longitude", longitude));
+    }
 }
