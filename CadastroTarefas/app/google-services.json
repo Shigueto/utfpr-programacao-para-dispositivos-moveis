@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "778686102686",
+    "firebase_url": "https://cadastro-de-tarefas-utfpr.firebaseio.com",
+    "project_id": "cadastro-de-tarefas-utfpr",
+    "storage_bucket": "cadastro-de-tarefas-utfpr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778686102686:android:c391bfdc3acc95ba8b0f8f",
+        "android_client_info": {
+          "package_name": "br.edu.utfpr.cadastrotarefas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778686102686-o1egkjqfv3igell70et4ogv198stb4et.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjTBEHRLlHvyDLONnNnMeMIXibEkteTz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778686102686-o1egkjqfv3igell70et4ogv198stb4et.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/add"
+        android:title="@string/nova_tarefa"
+        android:icon="@drawable/add"
+        app:showAsAction="always" />
+    <item android:id="@+id/filtro"
+        android:title="@string/filtro"
+        android:icon="@drawable/filter_list"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/sobre"
+        android:title="@string/sobre"
+        android:icon="@drawable/error_outline"
+        app:showAsAction="never" />
+    <item android:id="@+id/mostrar_notificacao"
+        android:title="@string/mostrar_notificacao"
+        app:showAsAction="never" />
+    <item android:id="@+id/ocultar_notificacao"
+        android:title="@string/ocultar_notificacao"
+        app:showAsAction="never" />
+    <item android:id="@+id/mostrar_token"
+        android:title="@string/mostrar_token_firebase"
+        app:showAsAction="never" />
+</menu>
